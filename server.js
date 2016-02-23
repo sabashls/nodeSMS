@@ -15,13 +15,13 @@ app.use(bodyParser.urlencoded({
 //    secret: 'webrtctest'
 //}));
 app.use(cookieParser());
-var client = require('twilio')('AC49e711063559adb5d58ecda42c8ec029', '17f1a353c8c4406125ab852dcdf4ed2a');
+var client = require('twilio')('accid', 'acctoken');
 
 //Send an SMS text message
 client.sendMessage({
 
-    to:'+918220384115', 
-    from: '+16572178945', 
+    to:'+918833XXXXXX', 
+    from: '+9283XXXXXXXXX', 
     body: 'NOdejs SMS Testing' 
 
 }, function(err, responseData) { 
